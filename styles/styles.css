@@ -1,0 +1,188 @@
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --light: #eee;
+  --gray: #6b7280;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+  --cedar: #242e3a;
+  --bluewood: #2f4555;
+  --fiddler: #59948c;
+  --google: #202125;
+  --flashwhite: #f2f1f5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to left, #eae1e6, #dddbe6);
+  background: -webkit-linear-gradient(to left, #eae1e6, #dddbe6);
+  background: -moz-linear-gradient(to left, #eae1e6, #dddbe6);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-container {
+  background-color: var(--flashwhite);
+  width: 1000px;
+  height: 700px;
+  border-radius: 2%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.image-cover {
+  width: 1000px;
+  height: 500px;
+  /* background-image: url("https://wallpaperaccess.com/full/3846517.jpg");
+  background-position: center center; */
+  border-radius: 2% 2% 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.blur {
+  border-radius: 2% 2% 0 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  height: 500px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.pictures-test {
+  position: absolute;
+  height: auto;
+  width: 100%;
+}
+
+.song-dtls {
+  width: 1000px;
+  height: 500px;
+  display: flex;
+  color: #ffff;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.picture {
+  width: 300px;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.texts {
+  font-size: 25px;
+}
+
+.btns-container {
+  width: 1000px;
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.fa-shared {
+  margin: 15px;
+  font-size: 40px;
+  color: var(--dark);
+}
+
+.all-btns {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.fa-circle-play {
+  color: orangered;
+}
+
+.fa-circle-pause {
+  color: orangered;
+}
+
+.duration {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin-left: 20px;
+  --webkit-appearance: none;
+}
+
+.duration-bar {
+  margin: 15px;
+  width: 700px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  margin-right: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-image: linear-gradient(#ff4500, #ff4500);
+  background-repeat: no-repeat;
+  height: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1px;
+  height: 20px;
+  box-shadow: -400px 0 0 400px #d5eebb;
+}
+
+.fa-solid:hover {
+  color: #bec3c6;
+  transition: 0.3s;
+}
+
+.fa-regular:hover {
+  color: #bec3c6;
+  transition: 0.3s;
+}
+
+.detailed-durat {
+  display: flex;
+  align-items: center;
+}
+
+.btns-durat {
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+  align-items: center;
+}
+
+.like-vol {
+  font-size: 20px;
+  margin: 5px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.vol-range {
+  display: flex;
+  justify-content: center;
+  width: 80px;
+  transition: opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+}

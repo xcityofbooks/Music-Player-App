@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Music Player</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="background-container">
+        <div class="image-cover">
+          <img
+            src="/assets/mainbg.jpg"
+            class="pictures-test"
+            id="background-img"
+          />
+          <div class="blur">
+            <div class="song-dtls">
+              <div class="main-details">
+                <div class="cover"></div>
+
+                <div class="texts">
+                  <h3 class="song-title"></h3>
+                  <h3 class="artist-name"></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btns-container">
+          <div class="buttons">
+            <button class="all-btns">
+              <i class="fa-solid fa-shuffle fa-shared" id="shuffle-icon"></i>
+            </button>
+            <button class="all-btns" id="backward-btn">
+              <i class="fa-solid fa-backward-step fa-shared"></i>
+            </button>
+            <button class="all-btns play-btn" id="play-button">
+              <i
+                class="fa-sharp fa-solid fa-circle-play fa-shared"
+                id="play-song"
+              ></i>
+            </button>
+            <button class="all-btns" id="forward-btn">
+              <i class="fa-solid fa-forward-step fa-shared"></i>
+            </button>
+            <button class="all-btns" id="repeat-btn">
+              <i class="fa-solid fa-repeat fa-shared"></i>
+            </button>
+          </div>
+
+          <div class="duration">
+            <div class="detailed-durat">
+              <span class="current-time">00:00</span>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                class="duration-bar"
+                onchange="seekTo()"
+              />
+              <span class="song-duration">00:00</span>
+            </div>
+
+            <div class="btns-durat">
+              <button class="like-vol" id="heart-like">
+                <i class="fa-regular fa-heart" id="heartIcon"></i>
+              </button>
+
+              <div id="btn-vol" class="btns-durat">
+                <button class="like-vol">
+                  <i class="fa-solid fa-volume-high"></i>
+                </button>
+
+                <div class="volume-range"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/scripts.js"></script>
+  </body>
+</html>
